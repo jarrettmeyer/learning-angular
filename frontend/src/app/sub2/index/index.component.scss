@@ -1,0 +1,12 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem -0.5rem;
+
+  .component-wrapper {
+    flex-grow: 1;
+    margin: 0.5rem;
+    padding: 1rem;
+    background: #98bad9;
+  }
+}
