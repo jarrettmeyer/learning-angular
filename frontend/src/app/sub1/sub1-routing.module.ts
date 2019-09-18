@@ -5,7 +5,7 @@ import { IndexComponent } from "./index/index.component";
 import { Viz1Component } from "./viz1/viz1.component";
 
 const routes: Routes = [
-  { path: "", component: IndexComponent },
+  { path: "", component: IndexComponent, pathMatch: "full" },
   { path: "viz1", component: Viz1Component }
 ];
 

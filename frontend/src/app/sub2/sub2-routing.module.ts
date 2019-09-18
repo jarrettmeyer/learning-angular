@@ -3,7 +3,9 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { IndexComponent } from "./index/index.component";
 
-const routes: Routes = [{ path: "", component: IndexComponent }];
+const routes: Routes = [
+  { path: "", component: IndexComponent, pathMatch: "full" }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
