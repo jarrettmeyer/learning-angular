@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { CommunicatorService } from "../communicator.service";
+import { CommunicatorService } from "../services/communicator/communicator.service";
 
 @Component({
   selector: "app-comp2",

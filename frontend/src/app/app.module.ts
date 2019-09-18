@@ -8,8 +8,9 @@ import { IndexComponent } from "./index/index.component";
 import { MenuComponent } from "./menu/menu.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { RedirectTargetComponent } from "./redirect-target/redirect-target.component";
-import { Sub1Component } from "./sub1/sub1.component";
-import { Sub2Component } from "./sub2/sub2.component";
+import { Sub1Module } from "./sub1/sub1.module";
+import { Sub2Module } from "./sub2/sub2.module";
+import { FancyHeaderModule } from "./fancy-header/fancy-header.module";
 
 @NgModule({
   declarations: [
@@ -17,11 +18,15 @@ import { Sub2Component } from "./sub2/sub2.component";
     IndexComponent,
     MenuComponent,
     NotFoundComponent,
-    RedirectTargetComponent,
-    Sub1Component,
-    Sub2Component
+    RedirectTargetComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    Sub1Module,
+    Sub2Module,
+    FancyHeaderModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

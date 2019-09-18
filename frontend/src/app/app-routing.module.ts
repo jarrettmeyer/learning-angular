@@ -7,6 +7,13 @@ import { RedirectTargetComponent } from "./redirect-target/redirect-target.compo
 
 const routes: Routes = [
   { path: "", component: IndexComponent },
+  {
+    path: "fancy-header",
+    loadChildren: () =>
+      import("./fancy-header/fancy-header.module").then(
+        (m) => m.FancyHeaderModule
+      )
+  },
   { path: "redirect", redirectTo: "redirect-target" },
   { path: "redirect-target", component: RedirectTargetComponent },
   {
