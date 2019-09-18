@@ -8,6 +8,7 @@ import { Sub2RoutingModule } from "./sub2-routing.module";
 
 @NgModule({
   declarations: [Comp1Component, Comp2Component, IndexComponent],
-  imports: [CommonModule, Sub2RoutingModule]
+  imports: [CommonModule, Sub2RoutingModule],
+  providers: []
 })
 export class Sub2Module {}
